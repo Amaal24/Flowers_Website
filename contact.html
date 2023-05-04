@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li><a href ="../index.html">Home</a></li>
+            <li><a href ="about.html">about</a></li>
+            <li><a href ="category.html">Category</a></li>
+            <li><a href ="product.html">Product</a></li>
+            <li><a href ="contact.html">Contact</a></li>
+        </ul>
+   </div> 
+    <section class="contact" id="contact">
+        <h1 class="heading"> <span>contact</span>us</h1>
+        <div class="row">
+            <form action="">
+                <input type="text" placeholder="name" class="box">
+                <input type="email" placeholder="email" class="box">
+                <input type="number" placeholder="number" class="box">
+                <textarea name="" class="box" placeholder="message" id="" cols="30" rows="10"></textarea>
+                <input type="submit" value="send message" class="btn">
+            </form>
+            
+            <div class="image">
+                <img src="../Images/contact.1.jpg" alt="">  
+                <h1 id="current-time"></h1>
+                <div class="quotes">
+                <p>TODAY'S QUOTES</p>
+                <h2>We hope you have a good time</h2>
+                </div>
+            </div>
+        </div>
+        <script>
+          let time = document.getElementById("current-time");
+          setInterval(() =>{
+            let d = new Date();
+            time.innerHTML = d.toLocaleTimeString();
+          },1000)
+        </script>
+    </section>
+</body>
+</html>
